@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+* {
+  color: #464e66;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+h1 span {
+  font-size: inherit;
+  color: #1264f9;
+}
+h1 {
+  margin-bottom: 0;
+  font-weight: 800;
+}
+body {
+  background-color: #e9edf2;
+}
+td.sub-table {
+  padding: 1rem;
+  overflow: hidden;
+}
+.customize-table .inner-table {
+  border-radius: 5px;
+  padding: 15px 5px 0px 5px;
+  margin-top: 20px;
+}
+.customize-table {
+  background-color: #fff;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  margin-top: 100px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+.customize-table .inner-table table th {
+  color: #1264f9;
+  font-size: 16px;
+  font-weight: 500;
+}
+.customize-table .inner-sub-table > table th,
+.customize-table .inner-sub-table > table td {
+  color: #818fb9 !important;
+}
+.inner-sub-table {
+  background-color: #f3f7fe;
+  border-radius: 10px;
+  padding: 18px 5px 5px 5px;
+}
+.customize-table .inner-sub-table > table th {
+  font-weight: 500;
+}
+.fas {
+  color: inherit;
+}
+.fa-chevron-down,
+.fa-chevron-up {
+  cursor: pointer;
+}
+th {
+  position: relative;
+}
+.sort-container {
+    display: flex;
+    flex-direction: column;
+    width: 9px;
+    position: absolute;
+    height: 20px;
+    bottom: 8px;
+}
+.sort-vendor .sort-container {
+    left: 62px;
+}
+.sort-invoice .sort-container {
+  left: 123px;
+}
+.sort-amount .sort-container {
+  left: 123px;
+}
+.quantity .sort-container {
+    left: 72px;
+}
+.unit .sort-container {
+  left: 83px;
+}
+.total .sort-container {
+  left: 46px;
+}
+.fa-sort-up {
+  height: 6px;
+  z-index: 2;
+  color: #818fb9;
+  cursor: pointer;
+}
+.fa-sort-down {
+    height: 6px;
+    padding-top: 8px;
+    color: #818fb9;
+    cursor: pointer;
+}
+.fa-sort-down:before {
+    content: "\f0dd";
+    margin-top: -10px;
+    position: absolute;
+    z-index: 1;
+}
+#exampleDataList, #innerForm {
+  border-right:none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-outline-primary {
+  margin-bottom:10px;
+}
+.top-search {
+  text-align: right;
+}
+.input-group-text {
+    padding: .675rem .75rem;
+    margin-left: -1px;
+}
+.inner-form {
+    width: 20%;
+    z-index: 8;
+    float:right;
+}
+.inner-form-container {
+  width: 100%;
+    position: relative;
+    height: 55px;
+}
+#innerForm {
+      border-top: none;
+    border-left: none;
+    border-bottom-left-radius: 0;
+}
+.innerFormCustom {
+  border-top:none;
+  border-right:none;
+  border-bottom-right-radius: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

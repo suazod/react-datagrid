@@ -1,0 +1,50 @@
+{
+"Invoices": [
+    {
+      "HeaderID": 1,
+      "Vendor": "Bob's Company",
+      "InvoiceNumber": 5678,
+      "InvoiceAmount": 5924.9,
+      "Details": [
+        {
+          "DetailID": 1,
+          "Quantity": 8951,
+          "UnitPrice": 0.005,
+          "LineItemTotal": 44.75
+        },
+        {
+          "DetailID": 2,
+          "Quantity": 8956,
+          "UnitPrice": 0.65,
+          "LineItemTotal": 5817.5
+        },
+        {
+          "DetailID": 3,
+          "Quantity": 8953,
+          "UnitPrice": 0.007,
+          "LineItemTotal": 62.65
+        }
+      ]
+    },
+    {
+      "HeaderID": 2,
+      "Vendor": "Larry's Company",
+      "InvoiceNumber": 9876,
+      "InvoiceAmount": 5862.25,
+      "Details": [
+        {
+          "DetailID": 4,
+          "Quantity": 8952,
+          "UnitPrice": 0.005,
+          "LineItemTotal": 44.75
+        },
+        {
+          "DetailID": 5,
+          "Quantity": 8954,
+          "UnitPrice": 0.65,
+          "LineItemTotal": 5817.5
+        }
+      ]
+    }
+  ]
+} 
